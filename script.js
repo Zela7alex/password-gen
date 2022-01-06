@@ -57,7 +57,6 @@ function runAtStart(){
   const answer1 = window.prompt('Do You want to Include Numbers')
   if(answer1 === 'YES' || answer1 ===  'yes' ){
     categoryPool.push(1);
-
   } 
   const answer2 = window.prompt('Do You want to Include Uppercase letters')
   if(answer2 === 'YES' ||answer2 ===  'yes' ){
@@ -93,7 +92,7 @@ function runAtStart(){
 finalPass = randomPass.join('');
 
 
-console.log(finalPass);
+console.log(finalPass); 
 
 }
 
@@ -106,26 +105,7 @@ function returnCategory(category){
 } */
 
 
-function generatePassword() {
-  var password = '';
-  
 
-  if(1){
-    return allowedDigits[randomNum(0,10)]
-    
-  } else if(2){
-    return allowedUpperCase[randomNum(0,26)]
-
-  }else if(3){
-    return allowedLowerCase[randomNum(0,26)]
-
-  }else if(4){
-    return allowedSpecial[randomNum(0,9)]
-  }
-
-
-  return password
-}
 
 /* 
 
