@@ -49,7 +49,7 @@ function generatePassword() {
   //--- for loop that will circle around the characters based off the passLength
 
   for (i = 0; i < passLength; i++) {
-    randomIndex = Math.floor(Math.random() = charChosen.length);
+    randomIndex = Math.floor(Math.random() * charChosen.length);
 
     password += charChosen[randomIndex];
   }
