@@ -1,22 +1,56 @@
-// Assignment code here
-
-
-// Get references to the #generate element
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
+ 
 
-const allowedDigits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-const allowedUpperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const allowedLowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-const allowedSpecial = ['!', '@', '#', '$', '%', '^', '&', '*', '?'];
+
 
 function generatePassword() {
-  var password = '';
-  
 
+var passLength;
 
-  return password
+// PROMPTING THE USER HOW MANY CHARACTERS THEY WANT IN PASSWORD
+passLength = window.prompt("How long would you like your password to be? Choose a number between 1 & 128");
+
+//-----makes sure the user inputs a number
+passLength = parseInt(passLength);
+
+//-----if the users input is not equal to passLength tell them ERROR
+if (passLength != passLength) {
+  return "Error, NaN";
 }
 
+if ((passLength < 8) || (passLength > 128))
+  return "Must choose a valid number";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ }
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
