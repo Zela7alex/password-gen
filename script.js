@@ -13,7 +13,7 @@ function generatePassword() {
   var passLength;
 
   // PROMPTING THE USER HOW MANY CHARACTERS THEY WANT IN PASSWORD
-  passLength = window.prompt("How long would you like your password to be? Choose a number between 1 & 128");
+  passLength = window.prompt("How long would you like your password to be? Choose a number between 8 & 128");
 
   //-----makes sure the user inputs a number
   passLength = parseInt(passLength);
